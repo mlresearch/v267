@@ -27,10 +27,10 @@ lastpage: 61809
 page: 61790-61809
 order: 61790
 cycles: false
-bibtex_author: Von Rohrscheidt, Julius and Rieck, Bastian
+bibtex_author: von Rohrscheidt, Julius and Rieck, Bastian
 author:
 - given: Julius
-  family: Von Rohrscheidt
+  family: von Rohrscheidt
 - given: Bastian
   family: Rieck
 date: 2025-10-06
