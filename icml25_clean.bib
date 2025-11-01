@@ -11131,15 +11131,6 @@
     abstract = {Traditional robust methods in multi-agent reinforcement learning (MARL) often struggle against coordinated adversarial attacks in cooperative scenarios. To address this limitation, we propose the Wolfpack Adversarial Attack framework, inspired by wolf hunting strategies, which targets an initial agent and its assisting agents to disrupt cooperation. Additionally, we introduce the Wolfpack-Adversarial Learning for MARL (WALL) framework, which trains robust MARL policies to defend against the proposed Wolfpack attack by fostering system-wide collaboration. Experimental results underscore the devastating impact of the Wolfpack attack and the significant robustness improvements achieved by WALL. Our code is available at https://github.com/sunwoolee0504/WALL.}
 }
 
-@InProceedings{lee25i,
-    title = {{GL}-{L}ow{P}op{A}rt: A Nearly Instance-Wise Minimax-Optimal Estimator for Generalized Low-Rank Trace Regression},
-    openreview = {TyArXyYnvz},
-    author = {Lee, Junghyun and Jang, Kyoungseok and Jun, Kwang-Sung and Vojnovic, Milan and Yun, Se-Young},
-    pages = {33057--33109},
-    abstract = {We present GL-LowPopArt, a novel Catoni-style estimator for generalized low-rank trace regression. Building on LowPopArt (Jang et al., 2024), it employs a two-stage approach: nuclear norm regularization followed by matrix Catoni estimation. We establish state-of-the-art estimation error bounds, surpassing existing guarantees (Fan et al., 2019; Kang et al., 2022), and reveal a novel experimental design objective, $\mathrm{GL}(\pi)$. The key technical challenge is controlling bias from the nonlinear inverse link function, which we address by our two-stage approach. We prove a <em>local</em> minimax lower bound, showing that our GL-LowPopArt enjoys instance-wise optimality up to the condition number of the ground-truth Hessian. Applications include generalized linear matrix completion, where GL-LowPopArt achieves a state-of-the-art Frobenius error guarantee, and <b>bilinear dueling bandits</b>, a novel setting inspired by general preference learning (Zhang et al., 2024). Our analysis of a GL-LowPopArt-based explore-then-commit algorithm reveals a new, potentially interesting problem-dependent quantity, along with improved Borda regret bound than vectorization (Wu et al., 2024).},
-    software = {https://github.com/nick-jhlee/GL-LowPopArt}
-}
-
 @InProceedings{lee25j,
     title = {How to Move Your Dragon: Text-to-Motion Synthesis for Large-Vocabulary Objects},
     openreview = {o2waQ5S2ty},
@@ -16164,15 +16155,6 @@ $32000 feature implementations --- and managerial tasks, where models choose bet
     pages = {46943--46970},
     abstract = {Multimodal large language models (MLLMs) have shown promising capabilities but struggle under distribution shifts, where evaluation data differ from instruction tuning distributions. Although previous works have provided empirical evaluations, we argue that establishing a formal framework that can characterize and quantify the risk of MLLMs is necessary to ensure the safe and reliable application of MLLMs in the real world. By taking an information-theoretic perspective, we propose the first theoretical framework that enables the quantification of the maximum risk of MLLMs under distribution shifts. Central to our framework is the introduction of Effective Mutual Information (EMI), a principled metric that quantifies the relevance between input queries and model responses. We derive an upper bound for the EMI difference between in-distribution (ID) and out-of-distribution (OOD) data, connecting it to visual and textual distributional discrepancies. Extensive experiments on real benchmark datasets, spanning 61 shift scenarios, empirically validate our theoretical insights.},
     software = {https://github.com/deeplearning-wisc/mllmshift-emi}
-}
-
-@InProceedings{oh25b,
-    title = {Understanding Bias Reinforcement in {LLM} Agents Debate},
-    openreview = {23iGt7BBtl},
-    author = {Oh, Jihwan and Jeong, Minchan and Ko, Jongwoo and Yun, Se-Young},
-    pages = {46971--47002},
-    abstract = {Large Language Models (LLMs) solve complex problems using training-free methods like prompt engineering and in-context learning, yet ensuring reasoning correctness remains challenging. While self-correction methods such as self-consistency and self-refinement aim to improve reliability, they often reinforce biases due to the lack of effective feedback mechanisms. Multi-Agent Debate (MAD) has emerged as an alternative, but we identify two key limitations: bias reinforcement, where debate amplifies model biases instead of correcting them, and lack of perspective diversity, as all agents share the same model and reasoning patterns, limiting true debate effectiveness. To systematically evaluate these issues, we introduce $\textit{MetaNIM Arena}$, a benchmark designed to assess LLMs in adversarial strategic decision-making, where dynamic interactions influence optimal decisions. To overcome MAD's limitations, we propose $\texttt{\textbf{DReaMAD}}$ ($\textbf{D}$iverse $\textbf{Rea}$soning via $\textbf{M}$ulti-$\textbf{A}$gent $\textbf{D}$ebate with Refined Prompt), a novel framework that (1) refines LLMs' strategic prior knowledge to improve reasoning quality and (2) promotes diverse viewpoints within a single model by systematically modifying prompts, reducing bias. Empirical results show that $\texttt{\textbf{DReaMAD}}$ significantly improves decision accuracy, reasoning diversity, and bias mitigation across multiple strategic tasks, establishing it as a more effective approach for LLM-based decision-making.},
-    software = {https://github.com/ericoh929/MetaNIMArena.git}
 }
 
 @InProceedings{oh25c,
@@ -24247,14 +24229,6 @@ $32000 feature implementations --- and managerial tasks, where models choose bet
     pages = {70550--70564},
     abstract = {We propose HyperIV, a novel approach for real-time implied volatility smoothing that eliminates the need for traditional calibration procedures. Our method employs a hypernetwork to generate parameters for a compact neural network that constructs complete volatility surfaces within 2 milliseconds, using only 9 market observations. Moreover, the generated surfaces are guaranteed to be free of static arbitrage. Extensive experiments across 8 index options demonstrate that HyperIV achieves superior accuracy compared to existing methods while maintaining computational efficiency. The model also exhibits strong cross-asset generalization capabilities, indicating broader applicability across different market instruments. These key features -- rapid adaptation to market conditions, guaranteed absence of arbitrage, and minimal data requirements -- make HyperIV particularly valuable for real-time trading applications. We make code available at https://github.com/qmfin/hyperiv.},
     software = {https://github.com/qmfin/hyperiv}
-}
-
-@InProceedings{yang25e,
-    title = {{P}hy{S}pec: Physically Consistent Spectral Reconstruction via Orthogonal Subspace Decomposition and Self-Supervised Meta-Auxiliary Learning},
-    openreview = {WISfJyOA6M},
-    author = {Yang, Xingxing and Chen, Jie and Yang, Zaifeng},
-    pages = {70565--70575},
-    abstract = {This paper presents a novel approach to hyperspectral image (HSI) reconstruction from RGB images, addressing fundamental limitations in existing learning-based methods from a physical perspective. We discuss and aim to address the ``colorimetric dilemma": failure to consistently reproduce ground-truth RGB from predicted HSI, thereby compromising physical integrity and reliability in practical applications. To tackle this issue, we propose PhySpec, a physically consistent framework for robust HSI reconstruction. Our approach fundamentally exploits the intrinsic physical relationship between HSIs and corresponding RGBs by employing orthogonal subspace decomposition, which enables explicit estimation of camera spectral sensitivity (CSS). This ensures that our reconstructed spectra align with well-established physical principles, enhancing their reliability and fidelity. Moreover, to efficiently use internal information from test samples, we propose a self-supervised meta-auxiliary learning (MAXL) strategy that rapidly adapts the trained parameters to unseen samples using only a few gradient descent steps at test time, while simultaneously constraining the generated HSIs to accurately recover ground-truth RGB values. Thus, MAXL reinforces the physical integrity of the reconstruction process. Extensive qualitative and quantitative evaluations validate the efficacy of our proposed framework, showing superior performance compared to SOTA methods.}
 }
 
 @InProceedings{yang25f,
