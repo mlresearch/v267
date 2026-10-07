@@ -3,7 +3,7 @@ booktitle: Proceedings of the 42nd International Conference on Machine Learning
 shortname: ICML
 volume: '267'
 year: '2025'
-start: &1 2025-07-13
+start: 2025-07-13
 end: 2025-07-19
 published: 2025-10-06
 conference_number: '42'
@@ -88,7 +88,7 @@ conference:
   url: https://icml.cc/Conferences/2025
   location: Vancouver Convention Center, Vancouver, Canada
   dates:
-  - *1
+  - 2025-07-13
   - 2025-07-14
   - 2025-07-15
   - 2025-07-16
